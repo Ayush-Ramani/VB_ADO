@@ -1,0 +1,9 @@
+
+// preferd oracle10g express edition for database
+
+create table information (id integer primary key,name varchar (30))
+
+create table student (rollno integer primary key,name varchar(2) not null,gender varchar(2))
+
+create table marks (m_id integer primary key,rollno integer references student ,mark integer)
+
